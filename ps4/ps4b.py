@@ -66,7 +66,7 @@ class Message(object):
             self.valid_words (list, determined using helper function load_words)
         '''
         self.message_text = text
-        self.valid_words = load_words("/Users/vihaandas/Documents/GitHub/MIT-Python/ps4/words.txt")
+        self.valid_words = load_words("./words.txt")
 
     def get_message_text(self):
         '''
@@ -244,7 +244,7 @@ if __name__ == '__main__':
 #    print('Expected Output:', (24, 'hello'))
 #    print('Actual Output:', ciphertext.decrypt_message())
 
-    story = ' '.join(load_words('/Users/vihaandas/Documents/GitHub/MIT-Python/ps4/story.txt'))
+    story = ' '.join(load_words('./story.txt'))
     print(story)
     ciphertext = CiphertextMessage(story)
     print(' '.join(ciphertext.decrypt_message()[1]))
